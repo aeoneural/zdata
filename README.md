@@ -1,10 +1,10 @@
 # zdata
 Web Data Analysis
 
-Method: 
-1. mySQL manipulation
-2. Tableau Visualization
+<i><b>Method:</b> 
+* mySQL manipulation
+* Tableau Visualization
 
 
-Coming soon: 
-1. ipython and pandas visualization
+<i><b>Coming soon </b>: 
+* ipython and pandas visualization
