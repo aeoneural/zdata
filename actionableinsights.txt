@@ -2,13 +2,14 @@ ACTIONABLE INSIGHTS:
 
 1. Define platform and visits 
 	a. which platform has the highest visits?
-	b. concentrate on the lowest one and it's development. 
+	b. cf: concentrate on the lowest one and it's development. 
 
 Script:  select DISTINCT(platform), SUM(visits) from TBL_NAME group by platform; 
 FILE: 1_visit_platform.csv
 
 2. Define platform and orders: 
-	a. 
+	a. which platform brings highest sales
+	b. cf: app development
 
 Script: 
 1. select 'new_customer', 'add_to_cart' union all select SUM(new_customer),SUM(add_to_cart) from TBL_NAME where new_customer = '1';
@@ -25,7 +26,7 @@ select 'new_customer', 'add_to_cart', 'platform' union all select SUM(new_custom
 FILE: 
 
 4. Define new customer grouped by site:
-	a. Which site is most visited?
+	a. Which site is most visited by new customers?
 
 SCRIPT: select 'new customer', 'site'union all select SUM(new_customer), site from TBL_NAME group by site 
 FILE: 
@@ -38,7 +39,7 @@ FILE:
 6. add_to_cart and orders grouped by platform and site:
 	a. If the correlation is high, we might discover system checkout problem\
 	b. Which site is accessible by which platform
-	c. Suggestion: develop new way to reach to the website
+	c. Suggestion: develop new way to reach to the site
 SCRIPT: 
  select 'add_to_cart', 'orders', 'site','platform' union all  select SUM(add_to_cart), SUM(orders), site, platform from TBL_NAME group by site, platform 
 
