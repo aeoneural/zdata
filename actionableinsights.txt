@@ -1,0 +1,68 @@
+ACTIONABLE INSIGHTS: 
+
+1. Define platform and visits 
+	a. which platform has the highest visits?
+	b. concentrate on the lowest one and it's development. 
+
+Script:  select DISTINCT(platform), SUM(visits) from TBL_NAME group by platform; 
+FILE: 1_visit_platform.csv
+
+2. Define platform and orders: 
+	a. 
+
+Script: 
+1. select 'new_customer', 'add_to_cart' union all select SUM(new_customer),SUM(add_to_cart) from TBL_NAME where new_customer = '1';
+0. select 'new_customer', 'add_to_cart' union all select SUM(new_customer),SUM(add_to_cart) from TBL_NAME where new_customer = '0';
+NULL. total = 1+0+NULL --> NULL = total - (1+0)
+FILE: 
+
+3. Define orders and new customer grouped by platform: 
+	a. Which platform has highest number of new_customer who add to cart?
+	b. Which platform has the new customer who order?
+
+SCRIPT: 
+select 'new_customer', 'add_to_cart', 'platform' union all select SUM(new_customer),SUM(add_to_cart),platform from TBL_NAME group by platform;
+FILE: 
+
+4. Define new customer grouped by site:
+	a. Which site is most visited?
+
+SCRIPT: select 'new customer', 'site'union all select SUM(new_customer), site from TBL_NAME group by site 
+FILE: 
+
+5. Define new customer grouped by site and platform?
+	a. Which site is visited most by which platform?
+SCRIPT: select 'new customer', 'site', 'platform' union all select SUM(new_customer), site, platform from TBL_NAME group by platform, site
+FILE: 
+
+6. add_to_cart and orders grouped by platform and site:
+	a. If the correlation is high, we might discover system checkout problem\
+	b. Which site is accessible by which platform
+	c. Suggestion: develop new way to reach to the website
+SCRIPT: 
+ select 'add_to_cart', 'orders', 'site','platform' union all  select SUM(add_to_cart), SUM(orders), site, platform from TBL_NAME group by site, platform 
+
+ 7. Gross sale and site (product):
+ 	a. ACME is the highest
+ SCRIPT: 
+ select 'gross sales', 'site' union all select SUM(gross_sales) DECS, site from TBL_NAME group by site
+ FILE: 
+
+ 8. order by month and site: 
+ 	a. Which month is bringing the highest order?
+
+SCRIPT: select 'orders', 'site', 'day' union all select SUM(orders),site, MONTH(day) from TBL_NAME where MONTH(day) = 1 || MONTH(day) = 2 || MONTH(day) = 6 || MONTH(day) = 7 || MONTH(day) = 8 ||MONTH(day) = 8 || MONTH(day) = 9 || MONTH(day) = 10 || MONTH(day) = 11 || MONTH(day) = 12  group by MONTH(day), site
+
+9. bounces and platform: 
+	a. which platform has the highest bounces?
+script: select bounces, platform from TBL_NAME group by platform; 
+
+10. site, gross sale monthly: 
+	a. which site has what gross sale in each month
+
+script: select 'site', 'gross_sale', 'month' union all select site, SUM(gross_sales), MONTH(day) from TBL_NAME where MONTH(day)=1 || MONTH(day)=2 || MONTH(day)= 6 || MONTH(day)= 7 || MONTH(day)= 8 || MONTH(day)= 9 || MONTH(day)= 10 || MONTH(day) = 11 || MONTH(day)= 12 group by MONTH(day), site;
+
+11. New customer, site monthly
+	a. Determine if a particular site needs improvement in advertisement or web site design. 
+script: select SUM(new_customer), MONTH(day), site from TBL_NAME where MONTH(day)=1 || MONTH(day)=2 || MONTH(day)= 6 || MONTH(day)= 7 || MONTH(day)= 8 || MONTH(day)= 9 || MONTH(day)= 10 || MONTH(day) = 11 || MONTH(day)= 12 group by site, MONTH(day);
+
