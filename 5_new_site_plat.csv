@@ -1,0 +1,51 @@
+new customer	site	platform
+8	Acme	
+0	Pinnacle	
+0	Sortly	
+536	Acme	Android
+536	Botly	Android
+448	Pinnacle	Android
+536	Sortly	Android
+440	Acme	BlackBerry
+24	Pinnacle	BlackBerry
+18	Sortly	BlackBerry
+458	Acme	ChromeOS
+68	Pinnacle	ChromeOS
+26	Sortly	ChromeOS
+458	Acme	iOS
+458	Pinnacle	iOS
+458	Sortly	iOS
+458	Tabular	iOS
+458	Widgetry	iOS
+78	Acme	iPad
+78	Pinnacle	iPad
+60	Sortly	iPad
+78	Tabular	iPad
+78	Acme	iPhone
+78	Pinnacle	iPhone
+78	Sortly	iPhone
+78	Widgetry	iPhone
+536	Acme	Linux
+124	Pinnacle	Linux
+290	Sortly	Linux
+78	Acme	Macintosh
+78	Pinnacle	Macintosh
+44	Sortly	Macintosh
+458	Acme	MacOSX
+458	Pinnacle	MacOSX
+444	Sortly	MacOSX
+78	Acme	Other
+34	Pinnacle	Other
+78	Sortly	Other
+0	Acme	SymbianOS
+0	Pinnacle	SymbianOS
+0	Sortly	SymbianOS
+418	Acme	Unknown
+16	Pinnacle	Unknown
+270	Sortly	Unknown
+536	Acme	Windows
+536	Pinnacle	Windows
+510	Sortly	Windows
+444	Acme	WindowsPhone
+24	Pinnacle	WindowsPhone
+24	Sortly	WindowsPhone
