@@ -1,7 +1,7 @@
 # zdata
 Web Data Analysis Challenge
 
-** <b><i>Interactive Presentation: </i>
+** <b><i>Interactive Presentation: </i></b>
 <br> Descriptive, predictive and prescriptive, most importantly actionable insights are derived. 
 * [Zappos Data Analysis Part-I](https://public.tableau.com/profile/aygerim#!/vizhome/ZData/visitandorders)
 * [Zappos Data Analysis Part-II] (https://public.tableau.com/profile/aygerim#!/vizhome/1_ZDATA100/5_zdata)
