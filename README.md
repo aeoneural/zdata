@@ -8,13 +8,13 @@ Web Data Analysis Challenge
 
 ** <i><b>Method:</b> 
 How did I derive the data above on the presentation?
-* mySQL manipulation
-* Tableau Visualization
-* Python Plot
+* First, I did cleaning, clustering, grouping through mySQL manipulation on terminal.
+* Second, I converted the second layer data into CSV and did Visualization using Tableau.
+* Third, used some pandas library to plot linear data.
 
 ** <i><b> What new techniques did I learn from Zappos Challenge?</i></b>:
 * Learning to use ipython notebook
-* Visualize using pandas library
+* Visualizion usage of Python
 
 
 Thank you Zappos. It's been an awesome week! :) 
