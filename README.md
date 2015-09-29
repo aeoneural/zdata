@@ -15,6 +15,7 @@ How did I derive the data above on the presentation?
 ** <i><b> What new techniques did I learn from Zappos Challenge?</i></b>:
 * Learning to use ipython notebook
 * Visualizion usage of Python
+* Being happiness-oriented through Zappos @ Twitter
 
 
 Thank you Zappos. It's been an awesome week! :) 
