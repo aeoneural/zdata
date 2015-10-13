@@ -1,5 +1,5 @@
-# zdata
-Zappos Web Data Analysis Challenge
+# Zappos Web Analytics Challenge
+zdata
 
 Analysed 23K lines of data and created an interactive and graph based presentation followed by actionable insights that I derived from the data.
 
